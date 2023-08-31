@@ -1,0 +1,35 @@
+package sh.fyz.golmonsmp.managers.player;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.scoreboard.Scoreboard;
+import org.bukkit.scoreboard.Team;
+
+import sh.fyz.golmonsmp.account.Account;
+
+public class PlayerDecoration {
+
+	@SuppressWarnings("deprecation")
+	public static void update(Player p) {
+		final Scoreboard scoreBoard = Bukkit.getScoreboardManager().getMainScoreboard();
+		final String id = getTeamID(p);
+
+		Account account = Account.get(p.getUniqueId());
+		
+		if (scoreBoard.getTeam(id) == null) {
+			scoreBoard.registerNewTeam(id);
+		}
+
+		final Team team = scoreBoard.getTeam(id);
+
+		team.setPrefix(account.getFormatedColor()+account.getPronouns()+ (account.getPronouns().length() == 0 ? "" : " "));
+		team.addPlayer(p);
+
+		p.setScoreboard(scoreBoard);
+	}
+	
+	private static String getTeamID(Player p) {
+		String uuid = p.getUniqueId().toString().substring(0, 13);
+		return uuid;
+	}
+}

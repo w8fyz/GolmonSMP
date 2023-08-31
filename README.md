@@ -1,4 +1,5 @@
-# E-FierteCraft
+# GolmonSMP
+This project is based on the E-Fierte Plugin, made some modifications for the GolmonSMP minecraft server (je fais de la drum n bass)
 
 # Why ?
 
