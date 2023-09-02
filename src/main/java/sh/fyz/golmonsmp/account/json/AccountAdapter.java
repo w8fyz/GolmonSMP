@@ -35,6 +35,13 @@ public class AccountAdapter implements JsonSerializer<Account>, JsonDeserializer
 			}.getType());
 		}
 
+		boolean scoreboard;
+		if(jsonObject.get("scoreboard") == null) {
+			scoreboard = true;
+		} else {
+			scoreboard = jsonObject.get("scoreboard").getAsBoolean();
+		}
+
 		long timestampLastTP = jsonObject.get("timestampLastTP").getAsLong();
 
 
@@ -42,7 +49,6 @@ public class AccountAdapter implements JsonSerializer<Account>, JsonDeserializer
 		int color = jsonObject.get("color").getAsInt();
 		String discordID = jsonObject.get("discordID").getAsString();
 		int playCount = jsonObject.get("playCount").getAsInt();
-		boolean scoreboard = jsonObject.get("scoreboard").getAsBoolean();
 		
 		return new Account(uuid, pronouns, homes, timestampLastTP, deaths, color, discordID, playCount, scoreboard);
 	}

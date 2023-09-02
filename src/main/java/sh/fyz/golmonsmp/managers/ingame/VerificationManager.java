@@ -7,6 +7,9 @@ public class VerificationManager {
 
     private static final ArrayList<UUID> unverified = new ArrayList<>();
 
+    public static ArrayList<UUID> getUnverified() {
+        return unverified;
+    }
     public static void addUnverified(UUID uuid) {
         unverified.add(uuid);
     }

@@ -3,14 +3,18 @@ package sh.fyz.golmonsmp.managers.discord.listeners;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import sh.fyz.golmonsmp.Main;
 import sh.fyz.golmonsmp.account.Account;
+import sh.fyz.golmonsmp.managers.discord.Discord;
 import sh.fyz.golmonsmp.managers.ingame.VerificationManager;
 import sh.fyz.golmonsmp.managers.player.Link;
+import sh.fyz.golmonsmp.managers.player.PlayerDecoration;
+import sh.fyz.golmonsmp.managers.scoreboard.Board;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -35,6 +39,11 @@ public class VerificationChannelListener extends ListenerAdapter{
 					});
 					Bukkit.broadcastMessage("§eBienvenue à §6"+p.getName()+" §esur le serveur !");
 					p.getInventory().addItem(new ItemStack(Material.COOKED_BEEF, 32));
+					Account.get(uuid).addPlayCount().save();
+					Board.update(p);
+					PlayerDecoration.update(p);
+					Discord.sendChatMessage("**+** *"+p.getName()+"*");
+					p.setGameMode(GameMode.SURVIVAL);
 				}
 			}
 		}

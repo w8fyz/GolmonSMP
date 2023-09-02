@@ -7,6 +7,7 @@ import sh.fyz.golmonsmp.listeners.*;
 import sh.fyz.golmonsmp.managers.discord.Discord;
 import sh.fyz.golmonsmp.managers.discord.listeners.AdvancementListener;
 import sh.fyz.golmonsmp.managers.scoreboard.BoardTask;
+import sh.fyz.golmonsmp.managers.tasks.UnverifiedTask;
 
 public class Main extends JavaPlugin{
 	
@@ -27,6 +28,7 @@ public class Main extends JavaPlugin{
 		Discord.init();
 		
 		new BoardTask().runTaskTimer(this, 10, 10);
+		new UnverifiedTask().runTaskTimer(this, 10, 10);
 	}
 	
 	@Override

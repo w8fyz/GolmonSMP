@@ -1,6 +1,7 @@
 package sh.fyz.golmonsmp.listeners;
 
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -34,6 +35,7 @@ public class JoinQuitListener implements Listener {
 			});
 			Bukkit.broadcastMessage("§eBienvenue à §6"+p.getName()+" §esur le serveur !");
 			p.getInventory().addItem(new ItemStack(Material.COOKED_BEEF, 32));
+			p.setGameMode(GameMode.SURVIVAL);
 		}
 		account.addPlayCount().save();
 		Board.update(p);
