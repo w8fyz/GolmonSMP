@@ -27,7 +27,7 @@ public class Discord {
 	public static void init() {
 		try {
 			jda = JDABuilder.createDefault(Main.getInstance().getConfig().getString("discord_token"))
-					.setActivity(Activity.playing("efrei.gay"))
+					.setActivity(Activity.playing("golmon.need.gf"))
 					.addEventListeners(new ReadyListener(), new CustomVoiceListener(), new VerificationChannelListener(), new MessageListener())
 					.enableIntents(EnumSet.allOf(GatewayIntent.class))
 					.setMemberCachePolicy(MemberCachePolicy.ALL).build();

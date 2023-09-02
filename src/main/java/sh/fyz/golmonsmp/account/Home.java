@@ -22,7 +22,7 @@ public class Home {
 	}
 	
 	public Location getBukkitLocation() {
-		return new Location(Bukkit.getWorld(loc.getWorldName()), loc.x(), loc.y(), loc.z(), loc.yaw(), loc.pitch());
+		return new Location(Bukkit.getWorld(loc.getWorldID()), loc.x(), loc.y(), loc.z(), loc.yaw(), loc.pitch());
 	}
 	
 }

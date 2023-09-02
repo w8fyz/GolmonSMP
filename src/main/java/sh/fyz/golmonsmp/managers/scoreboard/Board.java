@@ -12,7 +12,7 @@ import sh.fyz.golmonsmp.managers.tpa.TPARequest;
 
 public class Board {
 
-	private static int color = -1;
+	private static int color = 0;
 	private static String[] colors = { "§c", "§6", "§e", "§a", "§b", "§9", "§f", "§f", "§f", "§f", "§f", "§f", "§f",
 			"§f", "§f", "§f" };
 
@@ -36,7 +36,7 @@ public class Board {
 				"Home" + (account.getHomes().size() > 1 ? "s" : "") + ": §b" + account.getHomes().size(), "§c",
 				"En ligne" + (Bukkit.getOnlinePlayers().size() > 1 ? "s" : "") + ": §a"
 						+ Bukkit.getOnlinePlayers().size(),
-				"§f", "§7golmoncity.mine.fun"));
+				"§f", "§7golmon.need.gf"));
 
 	}
 

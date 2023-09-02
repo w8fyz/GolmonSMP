@@ -31,7 +31,7 @@ public class CommandSetHome implements CommandExecutor {
 			
 			account.getHomes()
 					.add(new Home(args[0],
-							new HomeLocation(p.getLocation().getWorld().getName(), p.getLocation().getX(),
+							new HomeLocation(p.getLocation().getWorld().getUID(), p.getLocation().getX(),
 									p.getLocation().getY(), p.getLocation().getZ(), p.getLocation().getYaw(),
 									p.getLocation().getPitch())));
 			account.save();

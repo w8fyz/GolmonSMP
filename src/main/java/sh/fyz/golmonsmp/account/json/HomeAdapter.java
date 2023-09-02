@@ -28,7 +28,7 @@ public class HomeAdapter implements JsonSerializer<Home>, JsonDeserializer<Home>
 		Location loc = new Gson().fromJson(jsonObject.get("loc"), new TypeToken<Location>() {
 		}.getType());
 
-		return new Home(name, new HomeLocation(loc.getWorld().getName(), loc.getX(), loc.getY(), loc.getZ(),
+		return new Home(name, new HomeLocation(loc.getWorld().getUID(), loc.getX(), loc.getY(), loc.getZ(),
 				loc.getYaw(), loc.getPitch()));
 	}
 

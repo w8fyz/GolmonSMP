@@ -17,7 +17,6 @@ import sh.fyz.golmonsmp.listeners.DeathListener;
 import sh.fyz.golmonsmp.listeners.InteractListener;
 import sh.fyz.golmonsmp.listeners.JoinQuitListener;
 import sh.fyz.golmonsmp.listeners.RainListener;
-import sh.fyz.golmonsmp.listeners.VerificationManager;
 import sh.fyz.golmonsmp.managers.discord.Discord;
 import sh.fyz.golmonsmp.managers.discord.listeners.AdvancementListener;
 import sh.fyz.golmonsmp.managers.scoreboard.BoardTask;
@@ -67,7 +66,6 @@ public class Main extends JavaPlugin{
 
 	private void registerListeners() {
 		Bukkit.getPluginManager().registerEvents(new RainListener(), this);
-		Bukkit.getPluginManager().registerEvents(new VerificationManager(), this);
 		Bukkit.getPluginManager().registerEvents(new InteractListener(), this);
 		Bukkit.getPluginManager().registerEvents(new JoinQuitListener(), this);
 		Bukkit.getPluginManager().registerEvents(new DeathListener(), this);

@@ -34,7 +34,7 @@ public class CommandHome implements CommandExecutor, TabExecutor {
 				p.sendMessage("§cTu n'as aucun home avec le nom \""+args[0]+"\".");
 				return false;
 			}
-			p.sendMessage("�6Teleporation vers "+home.getName()+" !");
+			p.sendMessage("§6Teleporation vers "+home.getName()+" !");
 			p.teleport(home.getBukkitLocation());
 			p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 			

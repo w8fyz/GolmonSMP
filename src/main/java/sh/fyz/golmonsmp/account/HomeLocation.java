@@ -1,22 +1,24 @@
 package sh.fyz.golmonsmp.account;
 
+import java.util.UUID;
+
 public class HomeLocation {
 	
-	private String worldName;
+	private UUID worldID;
 	private double x,y,z;
 	private float yaw, pitch;
 	
-	public HomeLocation(String worldName, double x, double y, double z, float yaw, float pitch) {
+	public HomeLocation(UUID worldID, double x, double y, double z, float yaw, float pitch) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
 		this.yaw = yaw;
 		this.pitch = pitch;
-		this.worldName = worldName;
+		this.worldID = worldID;
 	}
 	
-	public String getWorldName() {
-		return worldName;
+	public UUID getWorldID() {
+		return worldID;
 	}
 	
 	public double x() {
