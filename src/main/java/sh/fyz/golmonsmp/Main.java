@@ -35,10 +35,9 @@ public class Main extends JavaPlugin{
 	}
 
 	private void registerCommands() {
-		getCommand("home").setExecutor(new CommandHome());
-		getCommand("sethome").setExecutor(new CommandSetHome());
-		getCommand("delhome").setExecutor(new CommandDelHome());
-		getCommand("pronouns").setExecutor(new CommandPronouns());
+		//getCommand("home").setExecutor(new CommandHome());
+		//getCommand("sethome").setExecutor(new CommandSetHome());
+		//getCommand("delhome").setExecutor(new CommandDelHome());
 		getCommand("tpa").setExecutor(new CommandTpa());
 		getCommand("tpaccept").setExecutor(new CommandTpyes());
 		getCommand("tpyes").setExecutor(new CommandTpyes());
@@ -47,8 +46,8 @@ public class Main extends JavaPlugin{
 		getCommand("tpcancel").setExecutor(new CommandTpcancel());
 		getCommand("tpundo").setExecutor(new CommandTpcancel());
 		getCommand("voterain").setExecutor(new CommandVoteRain());
-		getCommand("home").setTabCompleter(new CommandHome());
-		getCommand("delhome").setTabCompleter(new CommandDelHome());
+		//getCommand("home").setTabCompleter(new CommandHome());
+		//("delhome").setTabCompleter(new CommandDelHome());
 	}
 
 	private void registerListeners() {

@@ -2,6 +2,7 @@ package sh.fyz.golmonsmp.managers.ingame;
 
 import org.bukkit.Bukkit;
 import org.bukkit.World;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -34,11 +35,7 @@ public class RainVote {
 		if(voters.size() >= goal) {
 			goal = 0;
 			voters.clear();
-			for(World w : Bukkit.getWorlds()) {
-				w.setStorm(false);
-				w.setThundering(false);
-				
-			}
+			Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "weather clear");
 			Bukkit.broadcastMessage("§bLe soleil est de retour !");
 		}
 	}
