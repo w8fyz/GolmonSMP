@@ -1,14 +1,13 @@
 package sh.fyz.golmonsmp.managers.ingame;
 
-import java.util.HashMap;
-import java.util.Iterator;
-
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.TextComponent;
+import java.util.HashMap;
+import java.util.Iterator;
 
 public class DeathTracker {
 

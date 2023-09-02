@@ -1,7 +1,6 @@
 package sh.fyz.golmonsmp.managers.scoreboard;
 
 import org.bukkit.scheduler.BukkitRunnable;
-
 import sh.fyz.golmonsmp.managers.ingame.DeathTracker;
 
 public class BoardTask extends BukkitRunnable{

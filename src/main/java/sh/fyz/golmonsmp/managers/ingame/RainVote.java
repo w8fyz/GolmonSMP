@@ -1,10 +1,10 @@
 package sh.fyz.golmonsmp.managers.ingame;
 
-import java.util.ArrayList;
-
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
+
+import java.util.ArrayList;
 
 public class RainVote {
 	

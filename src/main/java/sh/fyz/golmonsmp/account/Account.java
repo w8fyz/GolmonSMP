@@ -1,18 +1,17 @@
 package sh.fyz.golmonsmp.account;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.UUID;
-
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
-
 import sh.fyz.golmonsmp.Main;
 import sh.fyz.golmonsmp.account.json.AccountJson;
 import sh.fyz.golmonsmp.managers.tpa.TPARequest;
 import sh.fyz.golmonsmp.utils.ColorsItem;
 import sh.fyz.golmonsmp.utils.data.Data;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.UUID;
 
 public class Account {
 	

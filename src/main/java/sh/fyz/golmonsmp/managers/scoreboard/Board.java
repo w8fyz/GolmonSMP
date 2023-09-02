@@ -1,14 +1,13 @@
 package sh.fyz.golmonsmp.managers.scoreboard;
 
-import java.util.Arrays;
-import java.util.HashMap;
-
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-
 import sh.fyz.golmonsmp.account.Account;
 import sh.fyz.golmonsmp.managers.scoreboard.libs.FastBoard;
 import sh.fyz.golmonsmp.managers.tpa.TPARequest;
+
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class Board {
 

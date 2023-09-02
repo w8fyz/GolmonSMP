@@ -1,13 +1,12 @@
 package sh.fyz.golmonsmp.utils.data;
 
+import com.google.gson.Gson;
+import sh.fyz.golmonsmp.Main;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
-
-import com.google.gson.Gson;
-
-import sh.fyz.golmonsmp.Main;
 
 public class DataManager {
 

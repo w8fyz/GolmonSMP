@@ -6,7 +6,6 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
-
 import sh.fyz.golmonsmp.account.Account;
 import sh.fyz.golmonsmp.managers.player.PlayerDecoration;
 import sh.fyz.golmonsmp.utils.ColorsItem;

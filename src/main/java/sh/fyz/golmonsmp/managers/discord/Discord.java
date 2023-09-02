@@ -1,20 +1,19 @@
 package sh.fyz.golmonsmp.managers.discord;
 
-import java.util.EnumSet;
-
-import javax.security.auth.login.LoginException;
-
-import sh.fyz.golmonsmp.Main;
-import sh.fyz.golmonsmp.managers.discord.listeners.CustomVoiceListener;
-import sh.fyz.golmonsmp.managers.discord.listeners.MessageListener;
-import sh.fyz.golmonsmp.managers.discord.listeners.ReadyListener;
-import sh.fyz.golmonsmp.managers.discord.listeners.VerificationChannelListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
+import sh.fyz.golmonsmp.Main;
+import sh.fyz.golmonsmp.managers.discord.listeners.CustomVoiceListener;
+import sh.fyz.golmonsmp.managers.discord.listeners.MessageListener;
+import sh.fyz.golmonsmp.managers.discord.listeners.ReadyListener;
+import sh.fyz.golmonsmp.managers.discord.listeners.VerificationChannelListener;
+
+import javax.security.auth.login.LoginException;
+import java.util.EnumSet;
 
 public class Discord {
 	

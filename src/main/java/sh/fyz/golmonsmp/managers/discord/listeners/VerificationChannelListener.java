@@ -1,13 +1,13 @@
 package sh.fyz.golmonsmp.managers.discord.listeners;
 
-import java.util.ArrayList;
-import java.util.UUID;
-
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import sh.fyz.golmonsmp.Main;
 import sh.fyz.golmonsmp.account.Account;
 import sh.fyz.golmonsmp.managers.player.Link;
-import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.api.hooks.ListenerAdapter;
+
+import java.util.ArrayList;
+import java.util.UUID;
 
 public class VerificationChannelListener extends ListenerAdapter{
 	

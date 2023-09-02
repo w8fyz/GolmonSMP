@@ -2,7 +2,6 @@ package sh.fyz.golmonsmp.account.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
 import sh.fyz.golmonsmp.account.Account;
 import sh.fyz.golmonsmp.account.Home;
 

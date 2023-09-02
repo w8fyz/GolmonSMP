@@ -1,8 +1,8 @@
 package sh.fyz.golmonsmp.utils;
 
-import java.util.Arrays;
-
 import org.bukkit.Material;
+
+import java.util.Arrays;
 
 public enum ColorsItem {
 	

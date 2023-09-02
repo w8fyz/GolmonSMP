@@ -1,12 +1,11 @@
 package sh.fyz.golmonsmp.utils.data;
 
-import java.lang.reflect.Type;
-import java.util.Arrays;
-
 import com.google.common.reflect.TypeToken;
-
 import sh.fyz.golmonsmp.account.Account;
 import sh.fyz.golmonsmp.account.json.AccountJson;
+
+import java.lang.reflect.Type;
+import java.util.Arrays;
 
 @SuppressWarnings("serial")
 public enum DataType {

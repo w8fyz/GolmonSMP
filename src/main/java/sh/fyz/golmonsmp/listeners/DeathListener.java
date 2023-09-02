@@ -3,7 +3,6 @@ package sh.fyz.golmonsmp.listeners;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
-
 import sh.fyz.golmonsmp.account.Account;
 import sh.fyz.golmonsmp.managers.discord.Discord;
 import sh.fyz.golmonsmp.managers.ingame.DeathTracker;

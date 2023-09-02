@@ -1,23 +1,14 @@
 package sh.fyz.golmonsmp.account.json;
 
+import com.google.common.reflect.TypeToken;
+import com.google.gson.*;
+import sh.fyz.golmonsmp.account.Account;
+import sh.fyz.golmonsmp.account.Home;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-
-import com.google.common.reflect.TypeToken;
-import com.google.gson.Gson;
-import com.google.gson.JsonDeserializationContext;
-import com.google.gson.JsonDeserializer;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
-import com.google.gson.JsonSerializationContext;
-import com.google.gson.JsonSerializer;
-
-import sh.fyz.golmonsmp.account.Account;
-import sh.fyz.golmonsmp.account.Badges;
-import sh.fyz.golmonsmp.account.Home;
 
 public class AccountAdapter implements JsonSerializer<Account>, JsonDeserializer<Account> {
 

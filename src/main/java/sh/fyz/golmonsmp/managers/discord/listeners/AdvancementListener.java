@@ -3,7 +3,6 @@ package sh.fyz.golmonsmp.managers.discord.listeners;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerAdvancementDoneEvent;
-
 import sh.fyz.golmonsmp.managers.discord.Discord;
 
 public class AdvancementListener implements Listener {

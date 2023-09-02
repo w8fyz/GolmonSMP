@@ -1,10 +1,5 @@
 package sh.fyz.golmonsmp.managers.discord.listeners;
 
-import java.util.HashMap;
-import java.util.Random;
-
-import sh.fyz.golmonsmp.Main;
-import sh.fyz.golmonsmp.managers.discord.Discord;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.AudioChannel;
 import net.dv8tion.jda.api.entities.Guild;
@@ -14,6 +9,11 @@ import net.dv8tion.jda.api.events.guild.voice.GuildVoiceJoinEvent;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceLeaveEvent;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceMoveEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import sh.fyz.golmonsmp.Main;
+import sh.fyz.golmonsmp.managers.discord.Discord;
+
+import java.util.HashMap;
+import java.util.Random;
 
 
 public class CustomVoiceListener extends ListenerAdapter {

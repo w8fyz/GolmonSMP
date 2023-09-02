@@ -1,10 +1,9 @@
 package sh.fyz.golmonsmp.managers.discord.listeners;
 
-import org.bukkit.Bukkit;
-
-import sh.fyz.golmonsmp.Main;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import org.bukkit.Bukkit;
+import sh.fyz.golmonsmp.Main;
 
 public class MessageListener extends ListenerAdapter{
 

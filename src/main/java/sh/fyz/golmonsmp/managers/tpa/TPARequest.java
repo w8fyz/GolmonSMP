@@ -1,9 +1,9 @@
 package sh.fyz.golmonsmp.managers.tpa;
 
+import org.bukkit.entity.Player;
+
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
-
-import org.bukkit.entity.Player;
 
 public class TPARequest {
 	
