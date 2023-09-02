@@ -22,9 +22,12 @@ public class Account {
 	private List<Home> homes;
 	private long timestampLastTP;
 	private int deaths, color, playCount;
+
+	private boolean scoreboard;
 	
-	public Account(UUID uuid, String pronouns, List<Home> homes, long timestampLastTP, int deaths, int color, String discordID, int playCount) {
+	public Account(UUID uuid, String pronouns, List<Home> homes, long timestampLastTP, int deaths, int color, String discordID, int playCount, boolean scoreboard) {
 		this.uuid = uuid;
+		this.scoreboard = scoreboard;
 		this.playCount = playCount;
 		this.discordID = discordID;
 		this.color = color;
@@ -32,6 +35,15 @@ public class Account {
 		this.homes = homes;
 		this.timestampLastTP = timestampLastTP;
 		this.deaths = deaths;
+	}
+
+	public boolean isScoreboardActive() {
+		return scoreboard;
+	}
+
+	public Account setScoreboardActive(boolean scoreboard) {
+		this.scoreboard = scoreboard;
+		return this;
 	}
 	
 	public int getPlayCount() {

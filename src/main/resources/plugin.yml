@@ -4,6 +4,7 @@ api-version: 1.19
 author: Fyz
 main: sh.fyz.golmonsmp.Main
 commands:
+  sb:
   tpa:
   tpyes:
   tpno:

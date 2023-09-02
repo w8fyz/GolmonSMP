@@ -11,6 +11,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.ItemStack;
 import sh.fyz.golmonsmp.account.Account;
 import sh.fyz.golmonsmp.managers.discord.Discord;
+import sh.fyz.golmonsmp.managers.ingame.VerificationManager;
 import sh.fyz.golmonsmp.managers.player.Link;
 import sh.fyz.golmonsmp.managers.player.PlayerDecoration;
 import sh.fyz.golmonsmp.managers.scoreboard.Board;
@@ -22,10 +23,8 @@ public class JoinQuitListener implements Listener {
 		Player p = e.getPlayer();
 		Account account = Account.get(p.getUniqueId());
 		if (account == null) {
-			p.kickPlayer("§eBienvenue sur le serveur !\n\n§fPour des raisons de sécurité, vous devez lier votre discord à votre compte minecraft.\n\n§e§l"
-							+"§7--------\n§e§l"+ Link.getNewVerificationCode(p.getUniqueId())+"\n§7--------"
-							+ "\n\n§fest votre §ecode §fà rentrer dans le §esalon link du Discord.§f Vous pourrez en suite vous reconnecter.");
-		e.setJoinMessage("§eMdrrr y'a "+p.getName()+" qui a essayé de se co sans avoir lié son compte discord");
+			VerificationManager.addUnverified(p.getUniqueId());
+			e.setJoinMessage(null);
 			return;
 		}
 		e.setJoinMessage("§a+ §7"+p.getName());

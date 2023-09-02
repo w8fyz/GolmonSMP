@@ -51,6 +51,7 @@ public class Main extends JavaPlugin{
 	}
 
 	private void registerListeners() {
+		Bukkit.getPluginManager().registerEvents(new VerificationListener(), this);
 		Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
 		Bukkit.getPluginManager().registerEvents(new RainListener(), this);
 		Bukkit.getPluginManager().registerEvents(new InteractListener(), this);
